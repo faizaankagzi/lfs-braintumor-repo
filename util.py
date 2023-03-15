@@ -19,9 +19,9 @@ def load_img(img):
 
 def preprocess(img):
 	# Preprocessing the image
-	# img = tf.keras.applications.vgg16.preprocess_input(img)
+	#img = tf.keras.applications.vgg16.preprocess_input(img)
 	#img = img / 255.
-	# Returning the processed image
+	#Returning the processed image
 	return img
 
 def predict(X):
@@ -35,7 +35,7 @@ def predict(X):
 def pipeline(img):
 
 	loaded_img = load_img(img)
-	processed_img = preprocess(loaded_img)
-	response = predict(processed_img)
+	#processed_img = preprocess(loaded_img)
+	response = predict(loaded_img)
 
 	return response
