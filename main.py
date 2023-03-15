@@ -29,8 +29,8 @@ def index():
 	return "This is the API for Brain Tumor"
       
 @app.post("/predict")
-def endpoint_face_analytics(image: UploadFile):
-	response =  pipeline(image)
+def endpoint_face_analytics(img: UploadFile):
+	response =  pipeline(img)
 	return response
 
 # @app.post("/predict")
